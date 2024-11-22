@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   const location = window.location.href;
-  const url = location.replace('https://buzz-girls.com/', '')
+  const url = location.replace('https:/buzz-girls.vercel.app/', '')
   const re = `https://buzz-girls.com/${url}`
 
   useEffect(() => {
