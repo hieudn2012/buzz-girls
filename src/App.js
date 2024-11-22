@@ -4,15 +4,15 @@ import './App.css';
 
 function App() {
   const location = window.location.href;
-  const url = location.replace('https://redirect-dating.vercel.app/', '')
-  const re = `https://olympusmedia.us/${url}`
+  const url = location.replace('https://buzz-girls.com/', '')
+  const re = `https://buzz-girls.com/${url}`
 
   useEffect(() => {
     const getCount = async () => {
       fetch('https://66e15506c831c8811b548c9a.mockapi.io/traffic', { method: 'GET' })
         .then(res => res.json())
         .then(data => {
-          let count = data[0]?.count;
+          let count = data[1]?.count;
           count += 1;
           fetch('https://66e15506c831c8811b548c9a.mockapi.io/traffic/1', {
             method: 'PUT',
