@@ -4,6 +4,8 @@ import './App.css';
 
 function App() {
   const location = window.location.href;
+
+  console.log(location,'location');
   const url = location.replace('https:/buzz-girls.vercel.app/', '')
   const re = `https://buzz-girls.com/${url}`
 
