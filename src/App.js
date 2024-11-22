@@ -5,7 +5,6 @@ import './App.css';
 function App() {
   const location = window.location.href;
 
-  console.log(location,'location');
   const url = location.replace('https://buzz-girls.vercel.app/', '')
   const re = `https://buzz-girls.com/${url}`
 
@@ -16,7 +15,7 @@ function App() {
         .then(data => {
           let count = data[1]?.count;
           count += 1;
-          fetch('https://66e15506c831c8811b548c9a.mockapi.io/traffic/1', {
+          fetch('https://66e15506c831c8811b548c9a.mockapi.io/traffic/2', {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json'
